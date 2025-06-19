@@ -27,8 +27,8 @@ Este projeto é uma aplicação de linha de comando para gerenciamento de regist
 
 1. **Clone o repositório:**
    ```sh
-   git clone https://github.com/seu-usuario/seu-repo.git
-   cd seu-repo
+   git clone [https://github.com/seu-usuario/seu-repo.git](https://github.com/Eacam13/crudcompostgressql.git)
+   cd pastadoprojeto
    ```
 
 2. **Crie um ambiente virtual (opcional, mas recomendado):**
