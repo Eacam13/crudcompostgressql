@@ -116,9 +116,8 @@ Este projeto está sob a licença MIT.
 
 ## Autor
 
-Seu Nome  
-[Seu LinkedIn]([https://www.linkedin.com/](https://www.linkedin.com/in/acamdeveloper/))  
-[Seu GitHub](https://github.com/Eacam13)
+Celio Almeida 
+Linkedin: (https://www.linkedin.com/in/acamdeveloper/)
 
 ---
 
