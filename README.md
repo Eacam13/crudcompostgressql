@@ -1,82 +1,63 @@
-# 🐘 Neon CRUD Project
-
-Este projeto é uma aplicação Python simples e modular para realizar operações CRUD (Create, Read, Update, Delete) utilizando PostgreSQL via [NeonDB](https://neon.tech).  
+🐘 Neon CRUD Project
+Este projeto é uma aplicação Python simples e modular para realizar operações CRUD (Create, Read, Update, Delete) utilizando PostgreSQL via NeonDB.
 O código foi organizado em módulos para facilitar a leitura, manutenção e escalabilidade do sistema.
 
----
-
-## 📁 Estrutura do Projeto
+📁 Estrutura do Projeto:
 
 neon_crud_project/
-│
-├── .env # Variáveis de ambiente (URL do banco de dados)
-├── main.py # Execução principal com menu interativo
-│
+├── .env → Variáveis de ambiente (URL do banco de dados)
+├── main.py → Execução principal com menu interativo
+
 ├── db/
-│ ├── connection.py # Gerenciamento de conexão com PostgreSQL
-│ └── table_manager.py # Criação de tabelas
-│
+│ ├── connection.py → Gerenciamento de conexão com PostgreSQL
+│ └── table_manager.py → Criação da tabela de registros
+
 ├── crud/
-│ ├── create.py # Inserção de registros
-│ ├── read.py # Leitura/listagem de registros
-│ ├── update.py # Atualização de registros
-│ └── delete.py # Remoção de registros (único ou todos)
-│
+│ ├── create.py → Inserção de registros
+│ ├── read.py → Leitura/listagem de registros
+│ ├── update.py → Atualização de registros
+│ └── delete.py → Remoção de registros (único ou todos)
+
 └── utils/
-└── menu.py # Menu interativo de terminal
+└── menu.py → Menu interativo de terminal
 
-yaml
-Copiar
-Editar
+⚙️ Requisitos:
 
----
+Python 3.9 ou superior
 
-## ⚙️ Requisitos
+PostgreSQL (NeonDB ou local)
 
-- Python 3.9+
-- PostgreSQL (NeonDB ou local)
-- `pip` para instalar dependências
+pip (gerenciador de pacotes Python)
 
----
+📦 Instalação:
 
-## 📦 Instalação
-
-1. Clone o repositório:
-```bash
+Clone o repositório:
 git clone https://github.com/seu-usuario/neon_crud_project.git
 cd neon_crud_project
+
 Crie um ambiente virtual (opcional, mas recomendado):
 
-bash
-Copiar
-Editar
+Linux/macOS:
 python -m venv venv
-source venv/bin/activate        # Linux/macOS
-venv\Scripts\activate           # Windows
+source venv/bin/activate
+
+Windows:
+python -m venv venv
+venv\Scripts\activate
+
 Instale as dependências:
-
-bash
-Copiar
-Editar
 pip install -r requirements.txt
-Crie um arquivo .env com a URL do banco:
 
-env
-Copiar
-Editar
+Crie o arquivo .env com sua URL do banco:
 DATABASE_URL=postgresql://usuario:senha@host:porta/nome_do_banco
-▶️ Como usar
+
+▶️ Como usar:
+
 Execute o arquivo principal:
-
-bash
-Copiar
-Editar
 python main.py
-Menu interativo:
 
-css
-Copiar
-Editar
+Você verá o menu interativo:
+
 📌 MENU
 1 - Adicionar novo registro
 2 - Listar registros
@@ -84,7 +65,9 @@ Editar
 4 - Deletar todos os registros
 5 - Atualizar registro por ID
 6 - Sair
-✅ Funcionalidades
+
+✅ Funcionalidades:
+
 Criar registros (nome, email)
 
 Listar todos os registros ordenados por data
@@ -95,9 +78,10 @@ Deletar um único registro por ID
 
 Deletar todos os registros da tabela
 
-Estrutura de código limpa e separada em módulos
+Estrutura limpa e modular
 
-📚 Tecnologias utilizadas
+📚 Tecnologias utilizadas:
+
 Python
 
 PostgreSQL
@@ -106,20 +90,24 @@ psycopg2
 
 python-dotenv
 
-Banco de dados Neon (alternativa serverless para PostgreSQL)
+NeonDB (PostgreSQL serverless)
 
-📌 Melhorias Futuras
-Adicionar testes unitários com pytest
+📌 Melhorias Futuras:
 
-Interface Web ou REST API
+Adicionar testes com pytest
 
-Exportar registros em CSV/Excel
+Interface Web ou API REST
 
-Autenticação de usuário
+Exportar dados em CSV/Excel
 
-👨‍💻 Autor
+Autenticação de usuários
+
+👨‍💻 Autor:
+
 Desenvolvido por Seu Nome com dedicação e foco em boas práticas.
 Contribuições são bem-vindas!
 
-📝 Licença
+📝 Licença:
+
 Este projeto está licenciado sob a Licença MIT.
+Verifique o arquivo LICENSE para mais detalhes.
